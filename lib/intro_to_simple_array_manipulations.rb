@@ -11,7 +11,8 @@ def using_pop(array)
 end
 
 def pop_with_args(array, num)
-  
+  num.times
+  array.pop
 end
 
 def using_shift(array)
@@ -19,29 +20,30 @@ def using_shift(array)
 end
 
 def shift_with_args(array, num)
-  
+  num.times
+  array.shift
 end
 
-def using_concat
-  
+def using_concat(array1, array2)
+  array1.concat + array2.concat
 end
 
-def using_insert
-  
+def using_insert(array, num)
+  array.insert[num]
 end
 
-def using_uniq
-  
+def using_uniq(array)
+  array.uniq
 end
 
-def using_flatten
-  
+def using_flatten(array)
+  array.flatten
 end
 
-def using_delete
-  
+def using_delete(array, string)
+  array.delete(string)
 end
 
-def using_delete_at
-  
+def using_delete_at(array, num)
+  array.delete[num]
 end
